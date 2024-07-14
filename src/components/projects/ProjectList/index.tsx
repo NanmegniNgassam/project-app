@@ -1,11 +1,14 @@
 import ProjectSummary from "../ProjectSummary";
+import { ProjectListProps } from "./ProjectList.types";
 
-const ProjectList = () => {
+const ProjectList = (props: ProjectListProps) => {
+  const { projects } = props;
   return (
     <div className="project-list section">
-      <ProjectSummary />
-      <ProjectSummary />
-      <ProjectSummary />
+      {projects &&
+        projects.map((project) => {
+          return <ProjectSummary project={project} key={project.id} />;
+        })}
     </div>
   );
 };
