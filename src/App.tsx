@@ -4,6 +4,7 @@ import { Dashboard } from "./components/dashboard/Dashboard";
 import ProjectDetails from "./components/projects/ProjectDetails";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
+import CreateProject from "./components/projects/CreateProject";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/project/:id" Component={ProjectDetails} />
           <Route path="/signin" Component={SignIn} />
           <Route path="/signup" Component={SignUp} />
+          <Route path="/create" Component={CreateProject} />
         </Routes>
       </div>
     </Router>
