@@ -26,7 +26,12 @@ export class SignUp extends Component {
           <h5 className="grey-text text-hyphen-darken-3">Sign Up</h5>
           <div className="input-field">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" onChange={this.handleChange} />
+            <input
+              type="email"
+              id="email"
+              onChange={this.handleChange}
+              autoComplete="true"
+            />
           </div>
           <div className="input-field">
             <label htmlFor="password">Password</label>

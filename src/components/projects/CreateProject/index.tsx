@@ -30,7 +30,7 @@ export class CreateProject extends Component {
             <input type="text" id="title" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <label htmlFor="password">Content</label>
+            <label htmlFor="content">Content</label>
             <textarea
               className="materialize-textarea"
               id="content"
